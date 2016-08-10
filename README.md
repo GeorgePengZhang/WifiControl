@@ -1,0 +1,2 @@
+# WifiControl
+本项目是通过一台android设备让另一台android设备自动连上无线wifi
