@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
+import android.util.Log;
 
 public class WifiSearcher {
 
@@ -71,7 +72,6 @@ public class WifiSearcher {
 				mWifiManager.startScan();
 
 				mLock.lock();
-
 				// 阻塞等待扫描结果
 				try {
 					mIsWifiScanCompleted = false;
@@ -86,8 +86,12 @@ public class WifiSearcher {
 
 				mLock.unlock();
 
-				// 删除注册的监听类对象
-				mContext.unregisterReceiver(mWifiReceiver);
+				try {
+					// 删除注册的监听类对象
+					mContext.unregisterReceiver(mWifiReceiver);
+				} catch (Exception e) {
+					
+				}
 			}
 		}).start();
 	}
