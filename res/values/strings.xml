@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">WifiControl</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="wifi_ssid">Network SSID</string>
+    <string name="wifi_security">Security</string>
+    <string name="wifi_ssid_hint">Enter the SSID</string>
+    <string name="credentials_password_too_short">The password must have at least 8 characters.</string>
+    <string name="wifi_password">Password</string>
+    <string name="wifi_show_password">Show password</string>
+    
+    <string name="wifi_security_short_eap">802.1x</string>
+    <string name="wifi_security_none">None</string>
+    <string name="wifi_security_wep">WEP</string>
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <string name="wifi_security_eap">802.1x EAP</string>
+    <string name="wifi_security_short_wep">WEP</string>
+    <string name="wifi_security_short_wpa">WPA</string>
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    
+    <string name="wifi_secured_first_item">Secured with <xliff:g id="wifi_security_short">%1$s</xliff:g></string>
+    <string name="wifi_wps_available_second_item">\u0020(WPS available)</string>
+</resources>

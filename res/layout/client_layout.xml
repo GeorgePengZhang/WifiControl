@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/id_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="搜索wifi" />
+
+    <Spinner
+        android:id="@+id/id_wifispinner"
+        android:layout_width="match_parent"
+        android:layout_height="64dp" />
+
+    <LinearLayout
+            android:id="@+id/fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="@string/wifi_password" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagForceAscii"
+                android:maxLength="63"
+                android:password="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/hint"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:text="@string/credentials_password_too_short"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:id="@+id/show_password"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_show_password" />
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/id_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="连接wifi" />
+
+    <Button
+        android:id="@+id/id_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送wifi" />
+    
+    <TextView
+        android:id="@+id/id_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+</LinearLayout>
